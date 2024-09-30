@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>New one</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<script src="js/clock.js"></script>
+	<script src="js/storage.js"></script>
+	<script src="js/short.js"></script>
+</head>
+
+<body>
+	<div class="topapp">some buttons</div>
+	<div class="master">
+		<div class="datetime">
+			<h1 id="time"></h1>
+			<hr>
+			<h5 id="date"></h5>
+		</div>
+	</div>
+	<div class="shorts" onclick="adder();">
+	</div>
+	<template id="short">
+		<a class="short" href="">
+			<img src="assets/web.svg" onerror="this.src='assets/web.svg'">
+			<div>Hola</div>
+		</a>
+	</template>
+	<template id="adder">
+		<a class="adder">
+			<div class="icon">
+				<div class="ver"></div>
+				<div class="hor"></div>
+			</div>
+			<div class="text">Add</div>
+		</a>
+	</template>
+	<div class="bottom">some other buttons</div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@import "dark.css";
+@import "light.css";
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @extend .dark;
+  }
+}
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    @extend .light;
+  }
+}
+*/

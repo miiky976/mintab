@@ -1,0 +1,144 @@
+@import url("theme/dark.css") (prefers-color-scheme: dark);
+@import url("theme/light.css") (prefers-color-scheme: light);
+
+@font-face {
+	font-family: 'RedHat';
+	src: url("font/RedHatDisplay-Bold.ttf") format("truetype");
+}
+
+* {
+	font-family: 'RedHat';
+	font-size: 2.5svh;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: var(--md-sys-color-surface);
+	color: var(--md-sys-color-primary);
+	display: flex;
+	flex-flow: column;
+}
+
+div {
+	margin: 1rem;
+}
+
+.master {
+	text-align: center;
+	height: 100%;
+	flex-grow: 1;
+	align-items: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+
+#time {
+	font-size: 10svh;
+	margin-bottom: 1vh;
+}
+
+#date {
+	font-size: 2svh;
+	margin-top: 1vh;
+}
+
+h5 {
+	color: var(--md-sys-color-on-surface);
+}
+
+hr {
+	border-color: var(--md-sys-color-secondary);
+}
+
+img {
+	width: 5svh;
+	height: 5svh;
+}
+
+.shorts {
+	background-color: var(--md-sys-color-surface-container);
+	padding: 1rem;
+	border-radius: 0.5em;
+	display: flex;
+	flex-flow: row;
+}
+
+.short,
+.adder {
+	text-decoration: none;
+	border-radius: 0.5em;
+	padding: 0.5rem;
+	margin: 0;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	max-width: 4rem;
+	max-height: 4rem;
+	overflow: hidden;
+}
+
+.short {
+	align-items: center;
+
+
+	img {
+		background-color: var(--md-sys-color-secondary);
+		color: var(--md-sys-color-on-primary);
+		padding: 0.5em;
+		border-radius: 0.5em;
+	}
+
+	div {
+		margin: 0 0.5rem;
+	}
+
+}
+
+.adder {
+	align-items: center;
+
+	.icon {
+		border-color: var(--md-sys-color-outline);
+		border-style: dashed;
+		padding: 0.5em;
+		border-radius: 0.5em;
+
+		.ver,
+		.hor {
+			background: var(--md-sys-color-outline);
+			border-radius: 1rem;
+			margin: 0rem;
+			padding: 0;
+			position: relative;
+
+		}
+
+		.ver {
+			width: 0.2rem;
+			height: 1rem;
+			left: calc(50% - 0.1rem);
+			top: calc(50% - 1rem);
+		}
+
+		.hor {
+			width: 1rem;
+			height: 0.2rem;
+			left: calc(50% - 1rem);
+			bottom: calc(50% - 0.1rem);
+		}
+	}
+
+	.text {
+		margin: 0 0.5rem;
+	}
+}
+
+a:hover {
+	background-color: var(--md-sys-color-surface-container-lowest);
+}
